@@ -13450,7 +13450,8 @@ $\displaystyle 0.17678 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(
 <span class="n">valQ</span> <span class="o">=</span> <span class="mf">1.88</span><span class="p">;</span> <span class="n">reQ</span> <span class="o">=</span> <span class="o">.</span><span class="mi">1942</span>
 <span class="n">valfr</span> <span class="o">=</span> <span class="mi">28772</span><span class="p">;</span> <span class="n">refr</span> <span class="o">=</span> <span class="o">.</span><span class="mi">003906</span>
 
-<span class="n">ac40liq</span> <span class="o">=</span> <span class="p">[(</span><span class="n">kB</span><span class="p">,</span> <span class="n">Boltzmann</span><span class="p">),(</span><span class="n">T</span><span class="p">,</span><span class="mi">300</span><span class="p">),(</span><span class="n">p</span><span class="p">,</span><span class="n">pi</span><span class="p">),(</span><span class="n">B</span><span class="p">,</span> <span class="n">valB</span><span class="p">),(</span><span class="n">Q</span><span class="p">,</span> <span class="n">valQ</span><span class="p">),(</span><span class="n">fr</span><span class="p">,</span> <span class="n">valfr</span> <span class="p">),(</span><span class="n">dB</span><span class="p">,</span> <span class="n">reB</span><span class="o">*</span><span class="n">valB</span><span class="p">),(</span><span class="n">dQ</span><span class="p">,</span> <span class="o">.</span><span class="mi">1942</span><span class="o">*</span><span class="n">valQ</span><span class="p">),</span> <span class="p">(</span><span class="n">dfr</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="n">valfr</span><span class="p">),(</span><span class="n">k1</span><span class="p">,</span> <span class="o">.</span><span class="mi">089</span><span class="o">/.</span><span class="mi">971</span><span class="p">)</span> <span class="p">]</span> 
+<span class="n">ac40liq</span> <span class="o">=</span> <span class="p">[(</span><span class="n">kB</span><span class="p">,</span> <span class="n">Boltzmann</span><span class="p">),(</span><span class="n">T</span><span class="p">,</span><span class="mi">300</span><span class="p">),(</span><span class="n">p</span><span class="p">,</span><span class="n">pi</span><span class="p">),(</span><span class="n">B</span><span class="p">,</span> <span class="n">valB</span><span class="p">),(</span><span class="n">Q</span><span class="p">,</span> <span class="n">valQ</span><span class="p">),(</span><span class="n">fr</span><span class="p">,</span> <span class="n">valfr</span> <span class="p">),(</span><span class="n">dB</span><span class="p">,</span> <span class="n">reB</span><span class="o">*</span><span class="n">valB</span><span class="p">),</span>
+           <span class="p">(</span><span class="n">dQ</span><span class="p">,</span> <span class="n">reQ</span><span class="o">*</span><span class="n">valQ</span><span class="p">),</span> <span class="p">(</span><span class="n">dfr</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="n">valfr</span><span class="p">),(</span><span class="n">k1</span><span class="p">,</span> <span class="o">.</span><span class="mi">089</span><span class="o">/.</span><span class="mi">971</span><span class="p">)</span> <span class="p">]</span> 
 </pre></div>
 
     </div>
@@ -13579,14 +13580,15 @@ $\displaystyle 0.17678 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">valB</span> <span class="o">=</span> <span class="o">.</span><span class="mi">0447</span><span class="o">/</span><span class="p">(</span><span class="mf">20e3</span><span class="p">);</span> <span class="n">reB</span> <span class="o">=</span> <span class="o">.</span><span class="mi">05395</span>
 <span class="n">valQ</span> <span class="o">=</span> <span class="mf">1.295</span><span class="p">;</span> <span class="n">reQ</span> <span class="o">=</span> <span class="o">.</span><span class="mi">0510</span>
 <span class="n">valfr</span> <span class="o">=</span> <span class="mi">571000</span><span class="p">;</span> <span class="n">refr</span> <span class="o">=</span> <span class="o">.</span><span class="mi">001498</span>
 
-<span class="n">ac10liq</span> <span class="o">=</span> <span class="p">[(</span><span class="n">kB</span><span class="p">,</span> <span class="n">Boltzmann</span><span class="p">),(</span><span class="n">T</span><span class="p">,</span><span class="mi">300</span><span class="p">),(</span><span class="n">p</span><span class="p">,</span><span class="n">pi</span><span class="p">),(</span><span class="n">B</span><span class="p">,</span> <span class="n">valB</span><span class="p">),(</span><span class="n">Q</span><span class="p">,</span> <span class="n">valQ</span><span class="p">),(</span><span class="n">fr</span><span class="p">,</span> <span class="n">valfr</span> <span class="p">),(</span><span class="n">dB</span><span class="p">,</span> <span class="n">reB</span><span class="o">*</span><span class="n">valB</span><span class="p">),(</span><span class="n">dQ</span><span class="p">,</span> <span class="o">.</span><span class="mi">1942</span><span class="o">*</span><span class="n">valQ</span><span class="p">),</span> <span class="p">(</span><span class="n">dfr</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="n">valfr</span><span class="p">),(</span><span class="n">k1</span><span class="p">,</span> <span class="o">.</span><span class="mi">164</span><span class="o">/.</span><span class="mi">971</span><span class="p">)</span> <span class="p">]</span> 
+<span class="n">ac10liq</span> <span class="o">=</span> <span class="p">[(</span><span class="n">kB</span><span class="p">,</span> <span class="n">Boltzmann</span><span class="p">),(</span><span class="n">T</span><span class="p">,</span><span class="mi">300</span><span class="p">),(</span><span class="n">p</span><span class="p">,</span><span class="n">pi</span><span class="p">),(</span><span class="n">B</span><span class="p">,</span> <span class="n">valB</span><span class="p">),(</span><span class="n">Q</span><span class="p">,</span> <span class="n">valQ</span><span class="p">),(</span><span class="n">fr</span><span class="p">,</span> <span class="n">valfr</span> <span class="p">),(</span><span class="n">dB</span><span class="p">,</span> <span class="n">reB</span><span class="o">*</span><span class="n">valB</span><span class="p">),</span>
+           <span class="p">(</span><span class="n">dQ</span><span class="p">,</span> <span class="n">reQ</span><span class="o">*</span><span class="n">valQ</span><span class="p">),</span> <span class="p">(</span><span class="n">dfr</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="n">valfr</span><span class="p">),(</span><span class="n">k1</span><span class="p">,</span> <span class="o">.</span><span class="mi">164</span><span class="o">/.</span><span class="mi">971</span><span class="p">)</span> <span class="p">]</span> 
 </pre></div>
 
     </div>
@@ -13603,7 +13605,7 @@ $\displaystyle 0.17678 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sho10liq</span> <span class="o">=</span> <span class="n">sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span>
@@ -13638,13 +13640,13 @@ $\displaystyle 0.17678 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>InvOLS_free,sho =  84 nm/V
-	 sd =   9 nm/V
-	 relative error =  11 %
+	 sd =   5 nm/V
+	 relative error =   6 %
 
 
  relative error of: B = 5.39 %, Q = 5.10 %, fr = 0.15 % 
 
- contribution to relative error of InvOLS of: B = 23.588 %, Q = 76.408 %, fr = 0.005 % 
+ contribution to relative error of InvOLS of: B = 81.726 %, Q = 18.258 %, fr = 0.016 % 
 </pre>
 </div>
 </div>
@@ -13662,7 +13664,7 @@ $\displaystyle 0.17678 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pirzer10liq</span> <span class="o">=</span> <span class="n">pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span>
@@ -13697,13 +13699,13 @@ $\displaystyle 0.17678 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>InvOLS_free,pirzer =  51 nm/V
-	 sd =   5 nm/V
-	 relative error =  10 %
+	 sd =   3 nm/V
+	 relative error =   6 %
 
 
  relative error of: B = 5.39 %, Q = 5.10 %, fr = 0.15 % 
 
- contribution to relative error of InvOLS of: B = 28.55 %, Q = 71.44 %, fr = 0.01 % 
+ contribution to relative error of InvOLS of: B = 85.27 %, Q = 14.71 %, fr = 0.02 % 
 </pre>
 </div>
 </div>
