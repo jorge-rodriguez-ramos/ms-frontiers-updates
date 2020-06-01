@@ -13089,7 +13089,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span><span class="p">;</span> 
@@ -13132,7 +13132,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># first thing: define the symbols</span>
@@ -13154,7 +13154,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sho</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">B</span> <span class="o">*</span><span class="p">(</span> <span class="n">kB</span> <span class="o">*</span> <span class="n">T</span> <span class="o">*</span> <span class="mi">2</span><span class="o">*</span><span class="n">Q</span> <span class="o">/</span> <span class="p">(</span><span class="n">k1</span> <span class="o">*</span> <span class="n">p</span>  <span class="o">*</span><span class="n">fr</span><span class="p">)</span> <span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
@@ -13183,13 +13183,59 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
 
 <div class="output_latex output_subarea output_execute_result">
 $\displaystyle \frac{1.4142 \left(\frac{Q T k_{B}}{f_{r} k_{1} \pi}\right)^{0.5}}{B}$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pirzer</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">B</span> <span class="o">*</span><span class="p">(</span> <span class="n">kB</span> <span class="o">*</span> <span class="n">T</span> <span class="o">*</span> <span class="mi">2</span><span class="o">*</span><span class="n">Q</span> <span class="o">/</span> <span class="p">(</span><span class="n">k1</span> <span class="o">*</span> <span class="n">p</span>  <span class="o">*</span><span class="n">fr</span> <span class="o">*</span><span class="p">(</span> <span class="n">p</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">atan</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">Q</span><span class="p">)))</span> <span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;InvOLS_Pirzer&#39;</span><span class="p">)</span>
+<span class="n">N</span><span class="p">(</span><span class="n">pirzer</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>InvOLS_Pirzer
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle \frac{1.4142 \left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(0.5 \pi + \operatorname{atan}{\left(2 Q \right)}\right)}\right)^{0.5}}{B}$
 </div>
 
 </div>
@@ -13209,15 +13255,22 @@ I will consider B nd Q are independent among each other. k_c is not independent,
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="SD-SHO">SD SHO<a class="anchor-link" href="#SD-SHO">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Bterm</span> <span class="o">=</span> <span class="p">(</span><span class="n">sho</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">B</span><span class="p">)</span><span class="o">*</span><span class="n">dB</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> 
-<span class="n">Qterm</span> <span class="o">=</span> <span class="p">(</span><span class="n">sho</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span><span class="o">*</span><span class="n">dQ</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">frterm</span> <span class="o">=</span> <span class="p">(</span><span class="n">sho</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">fr</span><span class="p">)</span><span class="o">*</span><span class="n">dfr</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">sd_sho</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">((</span> <span class="n">Bterm</span> <span class="o">+</span> <span class="n">Qterm</span> <span class="o">+</span> <span class="n">Fterm</span> <span class="p">)</span><span class="o">**.</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Bterm_sho</span> <span class="o">=</span> <span class="p">(</span><span class="n">sho</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">B</span><span class="p">)</span><span class="o">*</span><span class="n">dB</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> 
+<span class="n">Qterm_sho</span> <span class="o">=</span> <span class="p">(</span><span class="n">sho</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span><span class="o">*</span><span class="n">dQ</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">frterm_sho</span> <span class="o">=</span> <span class="p">(</span><span class="n">sho</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">fr</span><span class="p">)</span><span class="o">*</span><span class="n">dfr</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">sd_sho</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">((</span> <span class="n">Bterm_sho</span> <span class="o">+</span> <span class="n">Qterm_sho</span> <span class="o">+</span> <span class="n">frterm_sho</span> <span class="p">)</span><span class="o">**.</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">N</span><span class="p">(</span><span class="n">sd_sho</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> 
 </pre></div>
 
@@ -13231,7 +13284,7 @@ I will consider B nd Q are independent among each other. k_c is not independent,
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[77]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13246,9 +13299,16 @@ $\displaystyle 1.4142 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi}\right)
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Relative-error-SHO">Relative error SHO<a class="anchor-link" href="#Relative-error-SHO">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">re_sho</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">(</span><span class="n">sd_sho</span><span class="o">/</span><span class="n">sho</span><span class="p">)</span>
@@ -13265,7 +13325,7 @@ $\displaystyle 1.4142 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi}\right)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[71]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13283,18 +13343,114 @@ $\displaystyle 1.4142 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi}\right)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="case-AC40,-SHO">case AC40, SHO<a class="anchor-link" href="#case-AC40,-SHO">&#182;</a></h2><p>B fom AC40 spectra from PS-NEX, not from MATLAB GUI because there is converted to a.u.</p>
-<p>k_C from MATLAB GUI</p>
-
+<h4 id="SD-Pirzer">SD Pirzer<a class="anchor-link" href="#SD-Pirzer">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Bterm_pirzer</span> <span class="o">=</span> <span class="p">(</span><span class="n">pirzer</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">B</span><span class="p">)</span><span class="o">*</span><span class="n">dB</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> 
+<span class="n">Qterm_pirzer</span> <span class="o">=</span> <span class="p">(</span><span class="n">pirzer</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span><span class="o">*</span><span class="n">dQ</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">frterm_pirzer</span> <span class="o">=</span> <span class="p">(</span><span class="n">pirzer</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">fr</span><span class="p">)</span><span class="o">*</span><span class="n">dfr</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">sd_pirzer</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">((</span> <span class="n">Bterm_pirzer</span> <span class="o">+</span> <span class="n">Qterm_pirzer</span> <span class="o">+</span> <span class="n">frterm_pirzer</span> <span class="p">)</span><span class="o">**.</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">N</span><span class="p">(</span><span class="n">sd_pirzer</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle 0.17678 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(\pi + 2.0 \operatorname{atan}{\left(2 Q \right)}\right)}\right)^{1.0} \left(32.0 B^{2} Q^{2} dfr^{2} \left(Q^{2} + 0.25\right)^{2} \left(0.5 \pi + \operatorname{atan}{\left(2 Q \right)}\right)^{2} + 8.0 B^{2} \delta_{Q}^{2} f_{r}^{2} \left(Q - 0.25 \left(4.0 Q^{2} + 1.0\right) \left(\pi + 2.0 \operatorname{atan}{\left(2 Q \right)}\right)\right)^{2} + 128.0 Q^{2} \delta_{B}^{2} f_{r}^{2} \left(Q^{2} + 0.25\right)^{2} \left(0.5 \pi + \operatorname{atan}{\left(2 Q \right)}\right)^{2}\right)}{B^{4} Q^{2} f_{r}^{2} \left(Q^{2} + 0.25\right)^{2} \left(0.5 \pi + \operatorname{atan}{\left(2 Q \right)}\right)^{2}}\right)^{0.5}$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Relative-error-Pirzer">Relative error Pirzer<a class="anchor-link" href="#Relative-error-Pirzer">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">re_pirzer</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">(</span><span class="n">sd_pirzer</span><span class="o">/</span><span class="n">pirzer</span><span class="p">)</span>
+<span class="n">N</span><span class="p">(</span><span class="n">sd_pirzer</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$\displaystyle 0.17678 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi \left(\pi + 2.0 \operatorname{atan}{\left(2 Q \right)}\right)}\right)^{1.0} \left(32.0 B^{2} Q^{2} dfr^{2} \left(Q^{2} + 0.25\right)^{2} \left(0.5 \pi + \operatorname{atan}{\left(2 Q \right)}\right)^{2} + 8.0 B^{2} \delta_{Q}^{2} f_{r}^{2} \left(Q - 0.25 \left(4.0 Q^{2} + 1.0\right) \left(\pi + 2.0 \operatorname{atan}{\left(2 Q \right)}\right)\right)^{2} + 128.0 Q^{2} \delta_{B}^{2} f_{r}^{2} \left(Q^{2} + 0.25\right)^{2} \left(0.5 \pi + \operatorname{atan}{\left(2 Q \right)}\right)^{2}\right)}{B^{4} Q^{2} f_{r}^{2} \left(Q^{2} + 0.25\right)^{2} \left(0.5 \pi + \operatorname{atan}{\left(2 Q \right)}\right)^{2}}\right)^{0.5}$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="case-AC40,-SHO">case AC40, SHO<a class="anchor-link" href="#case-AC40,-SHO">&#182;</a></h2><p>B fom AC40 spectra from PS-NEX, not from MATLAB GUI because there is converted to a.u.</p>
+<p>k_C from manuscript (air values)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="AC40-liquid">AC40 liquid<a class="anchor-link" href="#AC40-liquid">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">valB</span> <span class="o">=</span> <span class="mf">6.8e-6</span><span class="p">;</span> <span class="n">reB</span> <span class="o">=</span> <span class="o">.</span><span class="mi">2020</span>
+<span class="n">valQ</span> <span class="o">=</span> <span class="mf">1.88</span><span class="p">;</span> <span class="n">reQ</span> <span class="o">=</span> <span class="o">.</span><span class="mi">1942</span>
+<span class="n">valfr</span> <span class="o">=</span> <span class="mi">28772</span><span class="p">;</span> <span class="n">refr</span> <span class="o">=</span> <span class="o">.</span><span class="mi">003906</span>
+
+<span class="n">ac40liq</span> <span class="o">=</span> <span class="p">[(</span><span class="n">kB</span><span class="p">,</span> <span class="n">Boltzmann</span><span class="p">),(</span><span class="n">T</span><span class="p">,</span><span class="mi">300</span><span class="p">),(</span><span class="n">p</span><span class="p">,</span><span class="n">pi</span><span class="p">),(</span><span class="n">B</span><span class="p">,</span> <span class="n">valB</span><span class="p">),(</span><span class="n">Q</span><span class="p">,</span> <span class="n">valQ</span><span class="p">),(</span><span class="n">fr</span><span class="p">,</span> <span class="n">valfr</span> <span class="p">),(</span><span class="n">dB</span><span class="p">,</span> <span class="n">reB</span><span class="o">*</span><span class="n">valB</span><span class="p">),(</span><span class="n">dQ</span><span class="p">,</span> <span class="o">.</span><span class="mi">1942</span><span class="o">*</span><span class="n">valQ</span><span class="p">),</span> <span class="p">(</span><span class="n">dfr</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="n">valfr</span><span class="p">),(</span><span class="n">k1</span><span class="p">,</span> <span class="o">.</span><span class="mi">089</span><span class="o">/.</span><span class="mi">971</span><span class="p">)</span> <span class="p">]</span> 
 </pre></div>
 
     </div>
@@ -13305,21 +13461,16 @@ $\displaystyle 1.4142 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi}\right)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="AC40-liquid">AC40 liquid<a class="anchor-link" href="#AC40-liquid">&#182;</a></h3>
+<h3 id="SHO">SHO<a class="anchor-link" href="#SHO">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">valB</span> <span class="o">=</span> <span class="mf">6.8e-6</span><span class="p">;</span> <span class="n">reB</span> <span class="o">=</span> <span class="o">.</span><span class="mi">2020</span>
-<span class="n">valQ</span> <span class="o">=</span> <span class="mf">1.88</span><span class="p">;</span> <span class="n">reQ</span> <span class="o">=</span> <span class="o">.</span><span class="mi">1942</span>
-<span class="n">valfr</span> <span class="o">=</span> <span class="mi">28772</span><span class="p">;</span> <span class="n">refr</span> <span class="o">=</span> <span class="o">.</span><span class="mi">003906</span>
-
-<span class="n">ac40liq</span> <span class="o">=</span> <span class="p">[(</span><span class="n">kB</span><span class="p">,</span> <span class="n">Boltzmann</span><span class="p">),(</span><span class="n">T</span><span class="p">,</span><span class="mi">300</span><span class="p">),(</span><span class="n">p</span><span class="p">,</span><span class="n">pi</span><span class="p">),(</span><span class="n">B</span><span class="p">,</span> <span class="n">valB</span><span class="p">),(</span><span class="n">Q</span><span class="p">,</span> <span class="n">valQ</span><span class="p">),(</span><span class="n">fr</span><span class="p">,</span> <span class="n">valfr</span> <span class="p">),(</span><span class="n">dB</span><span class="p">,</span> <span class="n">reB</span><span class="o">*</span><span class="n">valB</span><span class="p">),(</span><span class="n">dQ</span><span class="p">,</span> <span class="o">.</span><span class="mi">1942</span><span class="o">*</span><span class="n">valQ</span><span class="p">),</span> <span class="p">(</span><span class="n">dfr</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="n">valfr</span><span class="p">),(</span><span class="n">k1</span><span class="p">,</span> <span class="o">.</span><span class="mi">0512</span><span class="o">/.</span><span class="mi">971</span><span class="p">)</span> <span class="p">]</span> 
-<span class="n">sho40liq</span> <span class="o">=</span> <span class="n">sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sho40liq</span> <span class="o">=</span> <span class="n">sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span>
 <span class="n">sd_sho40liq</span> <span class="o">=</span> <span class="n">sd_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span>
 <span class="n">re_sho40liq</span> <span class="o">=</span> <span class="n">re_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span>
 
@@ -13328,7 +13479,9 @@ $\displaystyle 1.4142 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi}\right)
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1"> relative error = </span><span class="si">{0:3.0f}</span><span class="s1"> %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">re_sho40liq</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1"> relative error of: B = </span><span class="si">{0:3.0f}</span><span class="s1"> %, Q = </span><span class="si">{1:3.0f}</span><span class="s1"> %, fr = </span><span class="si">{2:3.2f}</span><span class="s1"> % &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reB</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">reQ</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> contribution to relative error of InvOLS of: B = </span><span class="si">{0:3.2f}</span><span class="s1"> %, Q = </span><span class="si">{1:3.2f}</span><span class="s1"> %, fr = </span><span class="si">{2:3.2f}</span><span class="s1"> % &#39;</span><span class="o">.</span>
-      <span class="nb">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">Bterm</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="mi">100</span><span class="o">*</span><span class="n">Qterm</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="mi">100</span><span class="o">*</span><span class="n">frterm</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+      <span class="nb">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">Bterm_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+             <span class="mi">100</span><span class="o">*</span><span class="n">Qterm_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+             <span class="mi">100</span><span class="o">*</span><span class="n">frterm_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13345,8 +13498,8 @@ $\displaystyle 1.4142 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi}\right)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>InvOLS_free,sho = 266 nm/V
-	 sd =  60 nm/V
+<pre>InvOLS_free,sho = 202 nm/V
+	 sd =  45 nm/V
 	 relative error =  22 %
 
 
@@ -13361,15 +13514,200 @@ $\displaystyle 1.4142 \left(\frac{\left(\frac{Q T k_{B}}{f_{r} k_{1} \pi}\right)
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Pirzer">Pirzer<a class="anchor-link" href="#Pirzer">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pirzer40liq</span> <span class="o">=</span> <span class="n">pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span>
+<span class="n">sd_pirzer40liq</span> <span class="o">=</span> <span class="n">sd_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span>
+<span class="n">re_pirzer40liq</span> <span class="o">=</span> <span class="n">re_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;InvOLS_free,pirzer = </span><span class="si">{0:3.0f}</span><span class="s1"> nm/V&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1e9</span><span class="o">*</span><span class="n">pirzer40liq</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1"> sd = </span><span class="si">{0:3.0f}</span><span class="s1"> nm/V&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1e9</span><span class="o">*</span><span class="n">sd_pirzer40liq</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1"> relative error = </span><span class="si">{0:3.0f}</span><span class="s1"> %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">re_pirzer40liq</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1"> relative error of: B = </span><span class="si">{0:3.0f}</span><span class="s1"> %, Q = </span><span class="si">{1:3.0f}</span><span class="s1"> %, fr = </span><span class="si">{2:3.2f}</span><span class="s1"> % &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reB</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">reQ</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> contribution to relative error of InvOLS of: B = </span><span class="si">{0:3.2f}</span><span class="s1"> %, Q = </span><span class="si">{1:3.2f}</span><span class="s1"> %, fr = </span><span class="si">{2:3.2f}</span><span class="s1"> % &#39;</span><span class="o">.</span>
+      <span class="nb">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">Bterm_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_pirzer40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+             <span class="mi">100</span><span class="o">*</span><span class="n">Qterm_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_pirzer40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+             <span class="mi">100</span><span class="o">*</span><span class="n">frterm_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac40liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_pirzer40liq</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>InvOLS_free,pirzer = 119 nm/V
+	 sd =  26 nm/V
+	 relative error =  22 %
+
+
+ relative error of: B =  20 %, Q =  19 %, fr = 0.39 % 
+
+ contribution to relative error of InvOLS of: B = 83.82 %, Q = 16.17 %, fr = 0.01 % 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="AC10">AC10<a class="anchor-link" href="#AC10">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">valB</span> <span class="o">=</span> <span class="o">.</span><span class="mi">0447</span><span class="o">/</span><span class="p">(</span><span class="mf">20e3</span><span class="p">);</span> <span class="n">reB</span> <span class="o">=</span> <span class="o">.</span><span class="mi">05395</span>
+<span class="n">valQ</span> <span class="o">=</span> <span class="mf">1.295</span><span class="p">;</span> <span class="n">reQ</span> <span class="o">=</span> <span class="o">.</span><span class="mi">0510</span>
+<span class="n">valfr</span> <span class="o">=</span> <span class="mi">571000</span><span class="p">;</span> <span class="n">refr</span> <span class="o">=</span> <span class="o">.</span><span class="mi">001498</span>
+
+<span class="n">ac10liq</span> <span class="o">=</span> <span class="p">[(</span><span class="n">kB</span><span class="p">,</span> <span class="n">Boltzmann</span><span class="p">),(</span><span class="n">T</span><span class="p">,</span><span class="mi">300</span><span class="p">),(</span><span class="n">p</span><span class="p">,</span><span class="n">pi</span><span class="p">),(</span><span class="n">B</span><span class="p">,</span> <span class="n">valB</span><span class="p">),(</span><span class="n">Q</span><span class="p">,</span> <span class="n">valQ</span><span class="p">),(</span><span class="n">fr</span><span class="p">,</span> <span class="n">valfr</span> <span class="p">),(</span><span class="n">dB</span><span class="p">,</span> <span class="n">reB</span><span class="o">*</span><span class="n">valB</span><span class="p">),(</span><span class="n">dQ</span><span class="p">,</span> <span class="o">.</span><span class="mi">1942</span><span class="o">*</span><span class="n">valQ</span><span class="p">),</span> <span class="p">(</span><span class="n">dfr</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="n">valfr</span><span class="p">),(</span><span class="n">k1</span><span class="p">,</span> <span class="o">.</span><span class="mi">164</span><span class="o">/.</span><span class="mi">971</span><span class="p">)</span> <span class="p">]</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="SHO">SHO<a class="anchor-link" href="#SHO">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sho10liq</span> <span class="o">=</span> <span class="n">sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span>
+<span class="n">sd_sho10liq</span> <span class="o">=</span> <span class="n">sd_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span>
+<span class="n">re_sho10liq</span> <span class="o">=</span> <span class="n">re_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;InvOLS_free,sho = </span><span class="si">{0:3.0f}</span><span class="s1"> nm/V&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1e9</span><span class="o">*</span><span class="n">sho10liq</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1"> sd = </span><span class="si">{0:3.0f}</span><span class="s1"> nm/V&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1e9</span><span class="o">*</span><span class="n">sd_sho10liq</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1"> relative error = </span><span class="si">{0:3.0f}</span><span class="s1"> %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">re_sho10liq</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1"> relative error of: B = </span><span class="si">{0:3.2f}</span><span class="s1"> %, Q = </span><span class="si">{1:3.2f}</span><span class="s1"> %, fr = </span><span class="si">{2:3.2f}</span><span class="s1"> % &#39;</span><span class="o">.</span>
+      <span class="nb">format</span><span class="p">(</span><span class="n">reB</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">reQ</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> contribution to relative error of InvOLS of: B = </span><span class="si">{0:3.3f}</span><span class="s1"> %, Q = </span><span class="si">{1:3.3f}</span><span class="s1"> %, fr = </span><span class="si">{2:3.3f}</span><span class="s1"> % &#39;</span><span class="o">.</span>
+      <span class="nb">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">Bterm_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho10liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+             <span class="mi">100</span><span class="o">*</span><span class="n">Qterm_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho10liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+             <span class="mi">100</span><span class="o">*</span><span class="n">frterm_sho</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_sho10liq</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>InvOLS_free,sho =  84 nm/V
+	 sd =   9 nm/V
+	 relative error =  11 %
+
+
+ relative error of: B = 5.39 %, Q = 5.10 %, fr = 0.15 % 
+
+ contribution to relative error of InvOLS of: B = 23.588 %, Q = 76.408 %, fr = 0.005 % 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Pirzer">Pirzer<a class="anchor-link" href="#Pirzer">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pirzer10liq</span> <span class="o">=</span> <span class="n">pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span>
+<span class="n">sd_pirzer10liq</span> <span class="o">=</span> <span class="n">sd_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span>
+<span class="n">re_pirzer10liq</span> <span class="o">=</span> <span class="n">re_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;InvOLS_free,pirzer = </span><span class="si">{0:3.0f}</span><span class="s1"> nm/V&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1e9</span><span class="o">*</span><span class="n">pirzer10liq</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1"> sd = </span><span class="si">{0:3.0f}</span><span class="s1"> nm/V&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">1e9</span><span class="o">*</span><span class="n">sd_pirzer10liq</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1"> relative error = </span><span class="si">{0:3.0f}</span><span class="s1"> %&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">re_pirzer10liq</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1"> relative error of: B = </span><span class="si">{0:3.2f}</span><span class="s1"> %, Q = </span><span class="si">{1:3.2f}</span><span class="s1"> %, fr = </span><span class="si">{2:3.2f}</span><span class="s1"> % &#39;</span><span class="o">.</span>
+      <span class="nb">format</span><span class="p">(</span><span class="n">reB</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">reQ</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">refr</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> contribution to relative error of InvOLS of: B = </span><span class="si">{0:3.2f}</span><span class="s1"> %, Q = </span><span class="si">{1:3.2f}</span><span class="s1"> %, fr = </span><span class="si">{2:3.2f}</span><span class="s1"> % &#39;</span><span class="o">.</span>
+      <span class="nb">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">Bterm_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_pirzer10liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+             <span class="mi">100</span><span class="o">*</span><span class="n">Qterm_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_pirzer10liq</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+             <span class="mi">100</span><span class="o">*</span><span class="n">frterm_pirzer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">ac10liq</span><span class="p">)</span><span class="o">/</span><span class="n">sd_pirzer10liq</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>InvOLS_free,pirzer =  51 nm/V
+	 sd =   5 nm/V
+	 relative error =  10 %
+
+
+ relative error of: B = 5.39 %, Q = 5.10 %, fr = 0.15 % 
+
+ contribution to relative error of InvOLS of: B = 28.55 %, Q = 71.44 %, fr = 0.01 % 
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
